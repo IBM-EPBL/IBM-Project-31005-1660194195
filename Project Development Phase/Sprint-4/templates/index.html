@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                padding:0;
+                Margin:0;
+            }
+            header{
+                background-color:rgb(120, 228, 120);
+                padding:5px;
+            }
+            h1{
+                width:100%;
+                height:max-content;
+                display:block;
+                Color:white;
+                padding:0;
+            }
+            img{
+                width:300px;
+                height:auto;
+            }
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>Real Time Communication System Powered by AI for Specially Abled</h1>
+    </header>
+    <div class="container">
+        <center>
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <h3 class="mt-5">Cam Video</h3>
+                <img src="{{ url_for('video_feed') }}">
+            </div>
+        </div>
+        </center>
+    </div>
+    </body>
+</html>
